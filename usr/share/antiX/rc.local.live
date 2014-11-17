@@ -1,0 +1,15 @@
+#!/bin/sh -e
+#
+# rc.local.live
+#
+buildfstab -r
+swapon -a 
+sleep 1 && dev2uuid_fstab.sh 
+sleep 1 
+sed -i -e "/Dynamic/d" /etc/fstab
+update-grub-antix 
+cp -f /etc/rc.local2 /etc/rc.local 
+rm -f /etc/rc.local2
+dpkg -r antix-installer 2>/dev/null
+
+exit 0

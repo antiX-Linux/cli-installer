@@ -1,0 +1,11 @@
+Package: cli-installer-antix
+Version: 2.8.8
+Architecture: all
+Maintainer: anticapitalista <antiX@operamail.com>
+Installed-Size: 236
+Depends: bash, rsync, squashfs-tools, genisoimage
+Replaces: cli-installer-base-antix, cli-installer-core-antix, cli-installer-full-antix
+Section: antiX
+Priority: optional
+Homepage: http://antix.mepis.org
+Description: Script to install antiX to hard drive.
