@@ -7,5 +7,5 @@ Depends: bash, rsync, squashfs-tools, genisoimage
 Replaces: cli-installer-base-antix, cli-installer-core-antix, cli-installer-full-antix
 Section: antiX
 Priority: optional
-Homepage: http://antix.mepis.org
+Homepage: http://github.com/antiX-Linux/cli-installer
 Description: Script to install antiX to hard drive.
